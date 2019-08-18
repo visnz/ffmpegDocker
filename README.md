@@ -1,0 +1,2 @@
+# ffmpegDocker
+包含了来自客户提出的一些云端使用ffmpeg渲染视频的解决方案，使用Docker封装
