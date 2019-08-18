@@ -1,0 +1,22 @@
+version: '3'
+services:
+  ffmpeg1:
+    image: ffmpeg-clip
+    env_file:
+      - ../baidu.env
+    environment:
+      - DIR=/xx/xxx/ [在网盘中的地址位置，结尾有符号]
+      - FILE=a.mp4  [文件名可带空格，会输出第一部分的名称作为结果（不建议）]
+      - START_OFFEST=6.5   [开始部分的切除，单位秒]
+      - END_OFFEST=5.5     [末尾部分的切除，单位秒]
+      # 前两个是长期固定的，根据帐号不同会有所不同
+  ffmpeg2:
+    image: ffmpeg-clip
+    env_file:
+      - ../baidu.env
+    environment:
+      - DIR=/xx/xxx/ [在网盘中的地址位置，结尾有符号]
+      - FILE=a.mp4  [文件名可带空格，会输出第一部分的名称作为结果（不建议）]
+      - START_OFFEST=6.5   [开始部分的切除，单位秒]
+      - END_OFFEST=5.5     [末尾部分的切除，单位秒]
+      # 前两个是长期固定的，根据帐号不同会有所不同
